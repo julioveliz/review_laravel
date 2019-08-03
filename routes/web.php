@@ -11,6 +11,26 @@
 |
 */
 
+/*
+
 Route::get('/', function () {
     return view('welcome');
 });
+*/
+
+
+/*
+Route::get('foo', function () {
+    return 'Hello World';
+});
+*/
+
+Route::get('permiso/{nombre}', 'PermisoController@index'); //parametros obligatorios
+
+//Route::get('/permiso/{?nombre}', 'PermisoController@index'); //parametros opcional con ?
+
+Route::view('/', 'welcome');
+//Route::view('/permiso', 'permiso');
+
+
+//Route::view('permiso/{nombre}', 'permiso');
