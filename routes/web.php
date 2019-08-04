@@ -25,11 +25,11 @@ Route::get('foo', function () {
 });
 */
 
-Route::get('permiso/{nombre}', 'PermisoController@index'); //parametros obligatorios
+//Route::get('permiso/{nombre}', 'PermisoController@index'); //parametros obligatorios
 
 //Route::get('/permiso/{?nombre}', 'PermisoController@index'); //parametros opcional con ?
 
-Route::view('/', 'welcome');
+Route::get('/', 'InicioController@index');
 //Route::view('/permiso', 'permiso');
 
 
